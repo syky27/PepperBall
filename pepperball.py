@@ -25,7 +25,7 @@ class BTKbDevice():
         print("Setting up BT device")
 
         self.init_bt_device()
-        self.init_bluez_profile()
+        # self.init_bluez_profile()
 
     #configure the bluetooth hardware device
     def init_bt_device(self):
