@@ -27,7 +27,7 @@ from bluetooth import *
 #
 class BTKbDevice():
     #change these constants 
-    MY_ADDRESS="B8:27:EB:29:90:12"
+    MY_ADDRESS=""
     MY_DEV_NAME="PepperBall"
 
     #define some constants
