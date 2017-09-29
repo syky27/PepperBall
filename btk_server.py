@@ -31,8 +31,8 @@ class BTKbDevice():
     MY_DEV_NAME="PepperBall"
 
     #define some constants
-    P_CTRL =17  #Service port - must match port configured in SDP record
-    P_INTR =19  #Service port - must match port configured in SDP record#Interrrupt port  
+    P_CTRL =16  #Service port - must match port configured in SDP record
+    P_INTR =18  #Service port - must match port configured in SDP record#Interrrupt port  
     PROFILE_DBUS_PATH="/bluez/yaptb/btkb_profile" #dbus path of  the bluez profile we will create
     SDP_RECORD_PATH = sys.path[0] + "/sdp_record.xml" #file path of the sdp record to laod
     UUID="00001124-0000-1000-8000-00805f9b34fb"
@@ -99,7 +99,7 @@ class BTKbDevice():
         self.scontrol=BluetoothSocket(L2CAP)
         self.sinterrupt=BluetoothSocket(L2CAP)
 
-        #bind these sockets to a port - port zero to select next available		
+        #bind these sockets to a port - port zero to select next available
         self.scontrol.bind((self.MY_ADDRESS,self.P_CTRL))
         self.sinterrupt.bind((self.MY_ADDRESS,self.P_INTR ))
 
