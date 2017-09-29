@@ -27,8 +27,8 @@ from bluetooth import *
 #
 class BTKbDevice():
     #change these constants 
-    MY_ADDRESS="00:1A:7D:DA:71:13"
-    MY_DEV_NAME="DeskPi_BTKb"
+    MY_ADDRESS="B8:27:EB:29:90:12"
+    MY_DEV_NAME="PepperBall"
 
     #define some constants
     P_CTRL =17  #Service port - must match port configured in SDP record
