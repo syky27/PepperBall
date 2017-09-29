@@ -42,19 +42,19 @@ class BTKbDevice():
 
 
     #set up a bluez profile to advertise device capabilities from a loaded service record
-    def init_bluez_profile(self):
+    # def init_bluez_profile(self):
 
-        print("Configuring Bluez Profile")
+    #     print("Configuring Bluez Profile")
 
-        #setup profile options
-        service_record=self.read_sdp_service_record()
+    #     #setup profile options
+    #     service_record=self.read_sdp_service_record()
 
-        opts = {
-            "ServiceRecord":service_record,
-            "Role":"server",
-            "RequireAuthentication":False,
-            "RequireAuthorization":False
-        }
+    #     opts = {
+    #         "ServiceRecord":service_record,
+    #         "Role":"server",
+    #         "RequireAuthentication":False,
+    #         "RequireAuthorization":False
+    #     }
 
 
     #listen for incoming client connections
