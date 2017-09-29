@@ -123,12 +123,9 @@ class BTKbDevice():
 
 #main routine
 if __name__ == "__main__":
-    # we an only run as root
     if not os.geteuid() == 0:
        sys.exit("Only root can run this script")
 
-    # myservice = BTKbService();
     device = BTKbDevice;
-    device.init_bluez_profile()
     device.listen()
     
